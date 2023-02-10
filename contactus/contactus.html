@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Contact Form Design</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 45%;
+            margin:auto;
+            background-color: aliceblue;
+            padding: 1rem;
+            border-radius: 16px;
+        }
+        input{
+            padding: 0.5rem;
+            border-radius: 16px;
+        }
+        input[type="submit"]{
+            width: fit-content;
+            background-color: aquamarine;
+            color:antiquewhite;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+            margin:auto;
+        }
+
+        .HeadLine{
+    background-color: #3878a6;
+    
+}
+
+
+.nav{
+    background: rgb(67, 60, 60);
+    margin-left: -18px;
+    overflow: hidden;
+}
+.nav a{
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3878a6;
+    color:black;
+    font-size: 1.7em;
+    display:block;
+    float: left;
+}
+.nav a:hover{
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+    </style>
+</head>
+<body>
+    
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="hero">
+        <nav>
+            <img src="../images/logo.png" class="logo">
+            <ul>
+                <li class="blink1"><a href="index.html">HOME</a></li>
+                <li class="blink2"><a href="Aboutus/aboutus.html">About Us</a></li>
+                <li class="blink3"><a href="contactus/contactus.html">Contact us</a></li>
+                <li class="blink4"><a href="makeplan/makeaplan.html">Make Plan</a></li>
+                <li class="blink5"><a href="chattingInfo.html">Use Chat</a></li>
+                <li class="blink6"><a href="Login/login.html">Log In</a></li>
+                
+            </ul>
+        </nav>
+    </div>   
+
+    <hi style="text-align: center; border: 30px; "> Hello World!!! You can send me a message by E-mails! -Thanks for the offer~!!!</hi>
+    <div class="contact-box">
+        <form action="https://formspree.io/f/xoqzjnkk" method="post">
+            <input name="name"  type="text" placeholder="Enter Your Name">
+            <input name="email "type="email" placeholder="Enter Your Email">
+            <input name="contact_no" type="number" placeholder="Enter Your Contact Number">
+            <textarea name="message" name="" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="send">
+        </form>
+
+    </div>
+  
+  
+
+</body>
+</html>

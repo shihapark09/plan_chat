@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="basic.css">
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 45%;
+            margin:auto;
+            background-color: rgb(207, 233, 255);
+            padding: 1rem;
+            border-radius: 16px;
+        }
+        input{
+            padding: 0.5rem;
+            border-radius: 16px;
+        }
+        input[type="submit"]{
+            width: fit-content;
+            background-color: aquamarine;
+            color:rgb(58, 46, 31);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+            margin:auto;
+        }
+
+        .HeadLine{
+    background-color: darkslategrey;}
+    .button {
+        width: 100px;
+        height: 30px;
+        background-color: #0575E6;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+
+    
+
+</head>
+<body style="background-color:black">
+    <div class="contact-box">
+        <form style="position:relative; top:200px;">
+            <input name="name"  type="text" placeholder="Enter Your Purpose">
+            <input name="email "type="email" placeholder="Enter your reward">
+            <input name="contact_no" type="text" placeholder="Enter your wise saying">
+            <textarea name="message" name="" id="" cols="30" rows="10" placeholder="Enter Your Plan"></textarea>
+            <div class="button" id="save">Save</div>
+        </form>
+
+    </div>
+
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li class="blink1"><a href="index.html">HOME</a></li>
+            <li class="blink2"><a href="Aboutus/aboutus.html">About Us</a></li>
+            <li class="blink3"><a href="contactus/contactus.html">Contact us</a></li>
+            <li class="blink4"><a href="makeplan/makeaplan.html">Make Plan</a></li>
+            <li class="blink5"><a href="chattingInfo.html">Use Chat</a></li>
+            <li class="blink6"><a href="Login/login.html">Log In</a></li>
+            
+        </ul>
+    </nav>
+   <body>
+        <script>
+            const saveButton = document.getElementById("save");
+            saveButton.addEventListener("click", function() {
+        alert("Note saved!");
+      });
+        </script>
+   
+   </body> 
+</body>
+</html>

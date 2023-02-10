@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative; top:90px;
+    width: 100%;
+    max-width: 280px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6e59d;
+    padding: 25px 10px;
+}
+
+.line-wrap {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.line-wrap::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.line {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(41,41,41);
+    font-size: 20px;
+}
+
+.line:disabled {
+    color: black;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.line-wrap:last-of-type {
+    margin-bottom: 0;
+}
+
+.title-wrap {
+    margin: 20px;
+}
+
+.title {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.btn {
+    max-width: 120px;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 187, 93);
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: rgb(255, 11, 44);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12,3,51,0.3);
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 200px;
+    height: 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 90px;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #000000;
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000000;
+    font-size: 24px;
+    border: 2px solid #000000;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.back-image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

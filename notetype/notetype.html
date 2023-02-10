@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="position: relative; left:40px;">
+
+    
+        <nav>
+            <img src="../images/logo.png" class="logo">
+            <ul>
+                <li class="blink1"><a href="index.html">HOME</a></li>
+                <li class="blink2"><a href="Aboutus/aboutus.html">About Us</a></li>
+                <li class="blink3"><a href="contactus/contactus.html">Contact us</a></li>
+                <li class="blink4"><a href="makeplan/makeaplan.html">Make Plan</a></li>
+                <li class="blink5"><a href="chattingInfo.html">Use Chat</a></li>
+                <li class="blink6"><a href="Login/login.html">Log In</a></li>
+                
+            </ul>
+        </nav>
+
+    <div class="container">
+        <div class="title-wrap">
+            <span>Title: </span>
+            <input type="text" class="title" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <div class="line-wrap">
+            <input type="text" class="line" />
+        </div>
+        <button class="btn">
+            Save
+        </button>
+    </div>
+
+    <script>
+        const lines = document.querySelectorAll(".line");
+        const button = document.getElementsByClassName("btn")[0];
+        let save = true
+
+        const saveEdit = () => {
+            if (save) {
+                button.innerHTML = 'Edit';
+                save = false;
+            } else{
+                button.innerHTML = 'Save';
+                save = true;
+            }
+            
+            button.classList.toggle("edit-btn")
+            lineControls();
+        }
+        
+        const lineControls = () => {
+            lines.forEach(line => {
+            if (!save) {
+                line.setAttribute("disabled", true);
+            } else {
+                line.removeAttribute("disabled", false);
+
+            }
+        });
+        }
+
+        const setLinesMaxWidth = () => {
+            lines.forEach(line => {
+                line.setAttribute("maxlength", line.offsetWidth/12);
+        });
+        }
+        setLinesMaxWidth();
+
+        button.addEventListener("click", saveEdit);
+
+        window.addEventListener("resize", setLinesMaxWidth);
+        
+    </script>
+</body>
+</html>
