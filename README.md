@@ -30,3 +30,5 @@ Why do we have global Chatting for study?:
                     Another important aspect of the World Chatting About Study System is the ability to access resources and materials. The system provides students with access to a wealth of knowledge and information, including articles, videos, and other multimedia resources. This makes it easier for students to find and use the information they need to succeed in their studies.
                     
                     In conclusion, the World Chatting About Study System provides students with a new and innovative way to learn and connect with others. With its ability to join study groups, access resources and materials, and send private messages, students can benefit from a dynamic and interactive learning environment. By bringing students together from around the world, the World Chatting About Study System has the potential to revolutionize the way we learn and share knowledge.
+
+                    helloworld
