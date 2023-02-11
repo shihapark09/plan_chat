@@ -85,8 +85,8 @@
 
         submitData.addEventListener('click',(e) => {
 
-          var email = document.getElementById('logemail').value;
-          var password = document.getElementById('logpass').value;
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('password').value;
 
           createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
