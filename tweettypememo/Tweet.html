@@ -57,32 +57,9 @@
             
         </ul>
     </nav>
-    <style>
-        button#screenshot-button {
-          background-color: #4CAF50;
-          color: white;
-          padding: 14px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          margin: 20px;
-        }
+    
         
-        canvas {
-          border: 1px solid black;
-          margin: 20px;
-        }
-        </style>
-        
-        <button id="screenshot-button">Take Screenshot</button>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-        <script>
-        document.getElementById("screenshot-button").addEventListener("click", function() {
-          html2canvas(document.body).then(function(canvas) {
-            document.body.appendChild(canvas);
-          });
-        });
+ 
         </script>
         
 </body>
