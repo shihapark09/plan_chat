@@ -3,9 +3,27 @@
     padding: 0;
 }
 body{
-    background-color: rgba(12,3,51,0.3);
-    font-family: sans-serif;
+    animation: changeBg 5s infinite
+    alternate linear;
 }
+@keyframes changeBg{
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background:  #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
+}
+  
 .contact-box{
     width: 1600px;
     
