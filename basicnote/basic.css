@@ -76,3 +76,12 @@ nav ul li a{
 
 
 
+.blink{
+    animation: blink 1.5s linear infinite;
+    color: rgb(252, 249, 249);
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}

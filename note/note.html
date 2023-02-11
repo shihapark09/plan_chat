@@ -139,6 +139,15 @@ nav ul li a{
           color: lightblue;
           border: 1px solid lightblue;
         }
+        .blink{
+    animation: blink 1.5s linear infinite;
+    color: rgb(0, 0, 0);
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
       </style>
 
 
@@ -156,6 +165,7 @@ nav ul li a{
                
                 
             </ul>
+            <p class="blink">: use Window + Shift + S to take screenshot</p>
 </nav>
 
     <div style="position:relative; top: 150px;"id="notebook-app">

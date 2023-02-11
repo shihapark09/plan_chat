@@ -150,6 +150,16 @@
     z-index: -1;
   }
 
+  .blink{
+    animation: blink 1.5s linear infinite;
+    color: rgb(0, 0, 0);
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
     </style>
   </head>
 
@@ -166,6 +176,7 @@
          
           <li><a href="#">Use Chat</a></li>
       </ul>
+      <p class="blink">: use Window + Shift + S to take screenshot</p>
   </nav>
 
     <div class="computer">  
