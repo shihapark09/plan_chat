@@ -207,3 +207,18 @@ nav ul li a{
     bottom: 0;
     z-index: -1;
 }
+
+@media screen and (max-width: 650px) {
+    .contact-box{
+        width: 500px;
+        
+        box-shadow: 0 0 20px 0 #999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    .form{
+        margin: 35px;
+    }
+}
