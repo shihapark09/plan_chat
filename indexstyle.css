@@ -187,10 +187,47 @@ body{
     }
 }
 
+.position1{
+    position :relative;
+    width: 300px;
+    height: 90px;
+    top: 300px;
+    display: block;
+ 
+}
+.planchat{
+    position:relative; top:200px;
+    
+}
+.position{
+    position :relative;
+    width: 600px;
+    height: 90px;
+    top: 300px;
+    display: block;
+   
+}
 
-
-
-
+@media screen and (max-width: 380px){
+    
+    .position1{
+        top: 110px;
+        
+        width: 270px;
+        height: 90px;
+        
+    }
+    .position{
+        top: 120px;
+        width: 300px;
+        height: 200px;
+      
+    }
+    .planchat{
+        right: 5px;
+        top:100px;
+    }
+};
 
 
 
