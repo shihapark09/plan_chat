@@ -8,7 +8,7 @@
 .section{
     width: 100%
     min-height 100vh;
-    background-color:rgba(12,3,51,0.3);
+    
 }
 .container{
     width: 80%
@@ -216,4 +216,26 @@ nav ul li a{
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+body {
+    animation: changeBg 5s infinite
+    alternate linear;
+}
+@keyframes changeBg{
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background:  #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
 }
