@@ -14,76 +14,6 @@
 <html>
   <head>
     <style>
-      #note {
-        
-        width: 50%;
-        height: 300px;
-        padding: 10px;
-        border: 1px solid gray;
-        border-radius: 10px;
-        font-size: 18px;
-        background-color: #f2f2f2;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.5s;
-    
-      }
-      #note:hover {
-        transform: translate(-50%, -50%) scale(1.1);
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-      }
-      #saveBtn {
-        background-color: green;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        float: right;
-      }
-      #screenshotBtn {
-        background-color: blue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        margin-left: 10px;
-        float: right;
-      }
-      .dark-mode {
-        background-color: rgb(255, 221, 221);
-        color: rgb(0, 0, 0);
-      }
-      #container {
-        margin: 30px auto;
-        width: 70%;
-        text-align: center;
-        position: relative;
-      }
-      h1 {
-        font-family: Arial, sans-serif;
-        color: blue;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      #darkModeBtn {
-        background-color: gray;
-        color: rgb(0, 0, 0);
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        float: right;
-      }
-
-
       *{
     margin: 0;
     padding: 0;
@@ -180,15 +110,9 @@ nav ul li a{
       <h1></h1>
       <textarea style="position:relative; top:300px; left:150px;" id="note"></textarea>
       <br>
-      <button id="saveBtn">Save</button>
-      <button id="screenshotBtn">Screenshot</button>
-      <button id="darkModeBtn">Toggle Dark Mode</button>
     </div>
     <script>
-      const note = document.getElementById("note");
-      const saveBtn = document.getElementById("saveBtn");
-      const screenshotBtn = document.getElementById("screenshotBtn");
-      const darkModeBtn = document.getElementById("darkModeBtn");
+ 
 
   let isDragging = false;
   let currentX;
