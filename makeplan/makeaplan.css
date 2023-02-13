@@ -243,14 +243,36 @@ body{
     background-color: #c94f4f;
     transition: 0.4s ease;
 }
-@media screen and (max-width:940px){
+.BG{
+    position: relative;
+    width: 400px;
+    height: 150px;
+}
+.title{
+    font-size: 50px;
+    position: relative; left: 600px;
+}
+@media screen and (max-width:650px){
     .services{
-        display: flex;
+        display: block;
         flex-direction: column;
+        position: relative;
     }
     .card{
-        width:85px;
+        position: relative;
+        width:275px;
         display: flex;
         margin: 20px 0px;
+        display: block;
+        left: 50px;
+    }
+    .BG{
+        position: relative;
+        width: 250px;
+        height: 150px;
+    }
+    .title{
+        font-size: 30px;
+        position: relative; left: 30px;
     }
 }
