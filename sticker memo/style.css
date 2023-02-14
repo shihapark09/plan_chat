@@ -147,3 +147,9 @@ i{
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 650px) {
+  .note{
+    position: relative; left: 45px; top: 250px;
+  }
+}
