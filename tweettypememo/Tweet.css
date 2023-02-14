@@ -225,7 +225,7 @@ nav ul li a{
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px){
     .wrapper{
         max-width: 350px;
     }
@@ -234,10 +234,10 @@ nav ul li a{
             
     }
     .blink{
-        color: #3878a6;
+        color: #1da1f2;
     }
     nav ul li a{
-        color: #3878a6;
+        color: #1da1f2;
     }
         
 }

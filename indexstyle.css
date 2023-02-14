@@ -151,41 +151,6 @@ body{
     height: 100%;
     width: 100%;
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    background-image: url(images/studyimage1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 5s;
-
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
-
-
-
-}
-@keyframes animate{
-    0%{
-        background-image: url(images/studyimage2.jpg);
-    }20%{
-        background-image: url(images/studyimage3.jpg);
-    }40%{
-        background-image: url(images/studyimage4.jpg);
-    }60%{
-        background-image: url(images/studyimage5.jpg);
-    }80%{
-        background-image: url(images/studyimage6.jpg);
-    }100%{
-        background-image: url(images/studyimage7.jpg);
-    }
-}
 
 .position1{
     position :relative;
@@ -210,6 +175,36 @@ body{
    
 }
 
+
+body {
+    animation: changeBg 5s infinite
+    alternate linear;
+}
+@keyframes changeBg{
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background:  #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
+}
+
+
+.content1{
+    text-align: center;
+    position: relative; top:500px;
+}
+
+
 @media screen and (max-width: 650px){
     
     .position1{
@@ -231,6 +226,14 @@ body{
         font-size: 50px;
     }
 };
+
+
+
+
+
+
+
+
 
 
 
