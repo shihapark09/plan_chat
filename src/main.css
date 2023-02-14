@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgba(12,3,51,0.3);
+    background: white;
   }
   
   #app {
@@ -103,7 +103,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 17px;
 }
 
@@ -147,4 +147,13 @@ nav ul li a{
   50%{
       opacity: 0;
   }
+}
+@media screen and (max-width: 650px) {
+  .blink{
+    color: white;
+}
+nav ul li a{
+    color: white;
+}
+    
 }

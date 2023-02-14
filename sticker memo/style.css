@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(6,128,185);
+    background-color: cornsilk;
 }
 .note{
     position: absolute;
@@ -102,7 +102,7 @@ i{
   }
   nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 17px;
   }
   
@@ -152,4 +152,11 @@ i{
   .note{
     position: relative; left: 45px; top: 250px;
   }
+  .blink{
+    color: cornsilk;
+}
+nav ul li a{
+    color: cornsilk;
+}
+    
 }

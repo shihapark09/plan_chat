@@ -37,7 +37,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(24, 75, 176);
+    color: rgb(0, 0, 0);
     font-size: 17px;
 }
 
@@ -78,7 +78,7 @@ nav ul li a{
 
 .blink{
     animation: blink 1.5s linear infinite;
-    color: rgb(252, 249, 249);
+    color: rgb(0, 0, 0);
 }
 @keyframes blink{
     50%{
@@ -125,9 +125,19 @@ text-align: center;
 cursor: pointer;
 transition: background-color 0.3s ease;
 }
+body{
+    background-color: rgb(255, 255, 255);
+}
 
 @media screen and (max-width: 650px){
     form{
         width:370px;
     }
+    .blink{
+        color: white;
+    }
+    nav ul li a{
+        color: white;
+    }
+        
 }

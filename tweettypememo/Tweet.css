@@ -217,7 +217,7 @@ nav ul li a{
 
 .blink{
     animation: blink 1.5s linear infinite;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 @keyframes blink{
     50%{
@@ -233,4 +233,11 @@ nav ul li a{
             position: relative; right: 35px;
             
     }
+    .blink{
+        color: #3878a6;
+    }
+    nav ul li a{
+        color: #3878a6;
+    }
+        
 }
