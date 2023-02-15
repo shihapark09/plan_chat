@@ -18,7 +18,15 @@
 
   
   <body style="position: relative; top: 200px;right:-500px">
-
+    <div id="screen">
+      <button id="remove-screen" onclick="removeScreen()">&#10006;</button>
+      <div class="content">
+        <h2>Welcome to My Website!</h2>
+        <p>Thank you for visiting. Here you can find interesting articles, tutorials, and more.</p>
+        <a href="../screenshotnotice/screenshotnotice.html">Read More</a>
+      </div>
+    </div>
+    
     <nav>
       <img style="position: relative; top:-200px; right: 450px;" src="../images/logo.png" class="logo">
       <ul style="position: relative; top:-200px; right:550px;">
@@ -28,8 +36,7 @@
           <li><a href="../makeplan/makeaplan.html">Make Plan</a></li> 
           <li><a href="../ChattingINFO/chattinginfo.html">Use Chat</a></li>
       </ul>
-      <p class="blink">- Window + Shift + S (Window screenshot)</p>
-      <p class="blink">- Shift + command + 4 (Mac screenshot)</p>
+
   </nav>
 
     <div class="computer">  
@@ -61,6 +68,9 @@
     </div>
   </body>
 </html>
-
+        <script>function removeScreen() {
+          document.getElementById("screen").remove();
+        }
+        </script>
 </body>
 </html>

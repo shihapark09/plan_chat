@@ -17,6 +17,15 @@
 
 </head>
 <body>
+    <div id="screen">
+        <button id="remove-screen" onclick="removeScreen()">&#10006;</button>
+        <div class="content">
+          <h2>Welcome to My Website!</h2>
+          <p>Thank you for visiting. Here you can find interesting articles, tutorials, and more.</p>
+          <a href="../screenshotnotice/screenshotnotice.html">Read More</a>
+        </div>
+      </div>
+      
     <div class="contact-box">
         <form style="position:relative; top:200px;">
             <input name="name"  type="text" placeholder="Enter Your Purpose">
@@ -39,8 +48,7 @@
             
             
         </ul>
-        <p class="blink">- Window + Shift + S (Window screenshot)</p>
-        <p class="blink">- Shift + command + 4 (Mac screenshot)</p>
+        
     </nav>
    <body>
         <script>
@@ -51,5 +59,9 @@
         </script>
    
    </body> 
+   <script>function removeScreen() {
+    document.getElementById("screen").remove();
+  }
+  </script>
 </body>
 </html>

@@ -131,6 +131,80 @@ nav ul li a{
     animation: blink 1.5s linear infinite;
     color: rgb(0, 0, 0);
 }
+
+#screen {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.5s ease;
+    z-index: 999;
+  }
+  
+  #remove-screen {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    color: #999;
+    border: none;
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #remove-screen:hover {
+    color: #333;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .content a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .content a:hover {
+    background-color: #666;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 @keyframes blink{
     50%{
         opacity: 0;
@@ -139,6 +213,7 @@ nav ul li a{
 body{
     color: white;
 }
+
 @media screen and (max-width: 650px){
     .blink{
         color: white;

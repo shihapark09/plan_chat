@@ -13,11 +13,18 @@
     <link rel = "stylesheet" href="makeaplan.css">
 </head>
 <body>
-    
+    <div id="screen">
+        <button id="remove-screen" onclick="removeScreen()">&#10006;</button>
+        <div class="content">
+          <h2>How to take screenshot?</h2>
+          <p>If you want to know how to take screenshot?, read more!.</p>
+          <a href="../screenshotnotice/screenshotnotice.html">Read More</a>
+        </div>
+      </div>
+      
     <div class="section">
-        <div class="title">
-            <p>make a plan with</p>
-            <b>"planchats"</b>
+        <div stype="position:relative;"class="title">
+            
         </div>
         <div class="services">
             <div class="card">
@@ -115,5 +122,9 @@
         </div>
     </div>
     </div>
+    <script>function removeScreen() {
+        document.getElementById("screen").remove();
+      }
+      </script>
 </body>
 </html>
