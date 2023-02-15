@@ -235,9 +235,11 @@ nav ul li a{
     }
     .blink{
         color: #1da1f2;
+        position: relative; top:1000px;
     }
     nav ul li a{
         color: #1da1f2;
+        position: relative; top:1000px;
     }
         
 }
