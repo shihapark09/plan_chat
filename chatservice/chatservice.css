@@ -4,10 +4,29 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
-    width:100%;
-    background-color: #809faa;
+
+body {
+    animation: changeBg 5s infinite
+    alternate linear;
 }
+@keyframes changeBg{
+    0% {
+        background: #19078d;
+    }
+    25% {
+        background:  #082f85;
+    }
+    50% {
+        background: #086a97;
+    }
+    75% {
+        background: #0eb4b7;
+    }
+    100% {
+        background: #0becbc;
+    }
+}
+
 .title h1{
     text-align: center;
     padding-top: 50px;
@@ -30,7 +49,8 @@ body{
     text-align: center;
 }
 .card{
-    width:100%;
+    width:350px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +76,7 @@ body{
     margin-bottom: 20px;
 }
 .card p{
-    font-size: 17px;
+    font-size: 13px;
     margin-bottom: 30px;
     line-height: 1.5;
     color:#5e5e5e;
