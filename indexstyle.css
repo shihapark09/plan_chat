@@ -216,6 +216,76 @@ footer {
   }
 
 
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .mySlides {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .mySlides.active {
+    opacity: 1;
+  }
+  
+  .slideshow-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .next {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .prev {
+    border-radius: 5px 0 0 5px;
+  }
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
 @media screen and (max-width: 650px){
     
     .position1{
